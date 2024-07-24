@@ -1,0 +1,390 @@
+* {
+    background-image: url(image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #ffd700;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    margin-left: -200px;
+}
+
+.navigation a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 80px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: yellow; /* Yellow color */
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: rgb(72, 72, 135);
+    transition: .1s;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.home {
+    text-align: start;
+    width: 100%;
+    min-height: 100vh;
+    padding: 250px 50px 120px 350px;
+    color: #fff;
+}
+
+.content {
+    max-width: 500px;
+}
+
+.content h2 {
+    font-size: 2em;
+}
+
+.content h3 {
+    font-size: 1.7em;
+}
+
+.content h2 span {
+    color: #ffd700; /* Yellow color */
+    font-size: 2.5em;
+}
+
+.content h4{
+    margin-top: 10px;
+    font-weight: 700px;
+}
+.content h4 span {
+    color: #ffd700; /* Yellow color */
+}
+
+.content p {
+    font-size: 1.2em;
+    position: relative;
+    top: 10px;
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 20px;
+    background: #ffd700; /* Yellow color */
+    border-radius: 10px;
+    border: 2px solid #ffd700; /* Yellow color */
+    font-weight: 900;
+    font-size: 1.2em;
+    transition: .3s;
+    position: relative;
+    top: 35px;
+    left: 105px;
+}
+
+.btn-group a:hover {
+    color: #ffd700; /* Yellow color */
+    background: transparent;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 22px;
+    line-height: 35px;
+    transition: .3s;
+}
+
+/* About */
+
+.about {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.about .content {
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.4em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.MadhuDP {
+    overflow: hidden;
+}
+
+.MadhuDP img {
+    width: 400px;
+    height: auto;
+}
+
+/Education/
+
+.education {
+    padding: 100px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: px;
+}
+
+.education h2 {
+    font-size: 2.5em;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 150px;
+}
+
+.year-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.year {
+    flex: 1;
+    max-width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.year h3 {
+    font-size: 1.5em;
+    color: #ffd700;
+    margin-bottom: 5px;
+}
+
+.year h4 {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.year p {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 300px;
+    margin-bottom: 250px;
+    padding: 20px;
+}
+
+.toggle-btn{
+    position: absolute;
+    left: 47%;
+    font-size: 20px;
+}
+
+
+.skill{
+    padding-left: 120px;
+}
+
+.skill, .certifications {
+    width: 45%;
+}
+
+.skill h1, .certifications h1 {
+    color: #ffd700; /* Changed color */
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.skill h2, .certifications h2 {
+    color: #fff; /* Changed color */
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skill p, .certifications p {
+    color: #fff; /* Changed color */
+    margin-bottom: 20px;
+    margin-left: 25px;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.skills .certifications {
+    margin-top: 0; /* Adjust this as needed */
+}
+
+/* Contact */
+
+.contact {
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact .head {
+    background: transparent;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.contact .head h1, .contact .head p {
+    text-align: center;
+    color: #ffd700;
+}
+
+.contact .head p {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    color: white;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #ffd700;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    outline: transparent;
+    background: transparent;
+    border: 2px solid #ffd700;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffd700;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .navigation {
+        margin-left: 0;
+    }
+
+    .navigation a {
+        margin-right: 20px;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+
+    .home {
+        padding: 20px;
+    }
+
+    .about, .education, .skills, .contact {
+        padding: 50px 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+.social-icons{
+    position: absolute;
+    left: 47%;
+}

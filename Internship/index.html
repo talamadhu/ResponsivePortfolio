@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <header>
+        <h1>Madhu Kiran</h1>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="content">
+                <h2>Hello, I'm<pre><span>Madhu Kiran Chowdary</span></pre></h2>
+                <h3>Web Developer</h3>
+                <h4>Engineering Student</h4>
+                <p id="Description">I am actively seeking opportunities to improve my expertise in
+                programming languages, software development, and analytical problem-solving
+                to contribute to innovative projects and drive impactful progress.</p>
+                <div class="btn-group">
+                    <a href="Madhu Kiran Talapaneni Resume.pdf">Hire Me</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <div class="MadhuDP">
+                <img src="MadhuDP short.jpg" height="300px">
+            </div>
+            <div class="content">
+                
+                <p>I'm a passionate and committed computer science engineer, fueled by a relentless drive to leverage my skills and knowledge for the growth of an innovative and vibrant organization. I actively seek avenues to utilize my expertise in programming languages, software development, and analytical problem-solving to spearhead progressive projects and catalyze impactful transformations.</p>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <h2>Education</h2>
+            <div class="year-container">
+                <div class="year year1">
+                    <h3>2022 - 2026</h3>
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <p>SRM University</p>
+                    <p>C.GPA: 8.2</p>
+                </div>
+                <div class="year year2">
+                    <h3>2020 - 2022</h3>
+                    <h4>Sri Chaitanya Jr College</h4>
+                    <p>MPC</p>
+                    <p>GPA: 9.7</p>
+                </div>
+                <div class="year year3">
+                    <h3>2019 - 2020</h3>
+                    <h4>Siddardha High School</h4>
+                    <p>AP SSC</p>
+                    <p>GPA: 10</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills" id="skills">
+            
+            <div class="skill" id="skill-section">
+                <h1>SKILLS</h1>
+                <h2>Programming Languages</h2>
+                <p>C, C++, Python, HTML, CSS, JavaScript</p>
+                <h2>Fundamental Concepts</h2>
+                <p>Data Structures, OOPS</p>
+                <h2>MS Office</h2>
+                <p>Word, Excel, Powerpoint</p>
+            </div>
+            <div class="certifications" id="certifications-section" style="display: none;">
+                <h1>CERTIFICATIONS</h1>
+                <h2>Jul-Oct 2023 | Joy of Computing Using Python</h2>
+                <p>NPTEL Online Certification</p>
+                <p>Indian Institute of Technology Ropar</p>
+                <h2>Jul-Oct 2023 | Basic Course in Number Theory</h2>
+                <p>NPTEL Online Certification</p>
+                <p>Indian Institute of Technology Bombay</p>
+            </div>
+            <button class="toggle-btn" onclick="toggleSection()">Certifications</button>
+        </section>
+        <section class="contact" id="contact">
+            <div class="head">
+                <h1>Contact Me</h1>
+            </div>
+            <form>
+                <label for="fullName">Your Name:</label>
+                <input type="text" placeholder="Full Name" name="fullName" id="fullName">
+                <label for="email">Your Email:</label>
+                <input type="email" placeholder="abcd@xyz.com" name="email" id="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" placeholder="subject" name="subject" id="subject" required>
+                <label for="message">Message:</label>
+                <textarea placeholder="Your Message Here" name="message" id="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/its._madhuu/"><img src="insta.png" style="height: 23px;"></a>
+                <a href="https://www.linkedin.com/in/madhu-kiran-talapaneni-8a7174259/"><img src="linkedin.png" style="height: 23px;"></a>
+                <a href="mailto:madhukirantalapaneni2@gmail.com"><img src="mail.png" style="height: 23px;"></a>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleSection() {
+            var skillSection = document.getElementById('skill-section');
+            var certificationsSection = document.getElementById('certifications-section');
+            var button = document.querySelector('.toggle-btn');
+            
+            if (skillSection.style.display === 'none') {
+                skillSection.style.display = 'block';
+                certificationsSection.style.display = 'none';
+                button.textContent = 'Certifications';
+            } else {
+                skillSection.style.display = 'none';
+                certificationsSection.style.display = 'block';
+                button.textContent = 'Skills';
+            }
+        }
+    </script>
+</body>
+</html>
